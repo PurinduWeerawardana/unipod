@@ -68,7 +68,7 @@ class DefaultFirebaseOptions {
     projectId: 'unipod-5a0f8',
     storageBucket: 'unipod-5a0f8.appspot.com',
     iosClientId: '896737658368-dlsh2vcn3154oeuvibrmc5l9v9o7ta8u.apps.googleusercontent.com',
-    iosBundleId: 'com.haxqaud.unipod',
+    iosBundleId: 'com.example.unipod',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(

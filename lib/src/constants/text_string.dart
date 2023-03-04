@@ -14,7 +14,7 @@ const String kcrozProfile = "Profile";
 
 
 // Splash Screen Text
-const String kcrozAppName = "kcroz";
+const String kcrozAppName = "Unipod";
 const String kcrozAppTagLine = "Your Favorite\nDating Application";
 
 // OnBoarding Text
@@ -30,7 +30,7 @@ const String kcrozOnBoardingCounter3 = "3/3";
 
 
 // Welcome Screen Text
-const String kcrozWelcomeTitle = "Welcome to Kcroz";
+const String kcrozWelcomeTitle = "Welcome to Unipod";
 const String kcrozWelcomeSubTitle = "let's find out who's interested in you ";
 
 

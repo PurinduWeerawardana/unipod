@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.haxquad.unipod">
+    package="com.example.unipod">
    <application
         android:label="unipod"
         android:name="${applicationName}"
