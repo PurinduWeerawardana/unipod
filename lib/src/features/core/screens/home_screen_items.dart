@@ -6,9 +6,4 @@ import 'chat/screens/home.dart';
 import 'map/home_page_map.dart';
 import 'map/mapUi.dart';
 
-List<Widget> homeScreenItems = [
-  MapUI(),
-  NewScreen(),
-  Chat(),
-  ProfileScreen()
-];
+List<Widget> homeScreenItems = [MapUI(), NewScreen(), Chat(), ProfileScreen()];

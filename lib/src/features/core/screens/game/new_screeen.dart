@@ -1,8 +1,11 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:unipod/src/features/core/models/location_model.dart';
 
 class NewScreen extends StatefulWidget {
   const NewScreen({super.key});
@@ -15,6 +18,8 @@ class _NewScreenState extends State<NewScreen> {
   String locationMessage = "Current Location of the User";
   late String lat;
   late String long;
+  FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  FirebaseAuth _auth = FirebaseAuth.instance;
 
   Future<Position> _getCurrentLocation() async {
     bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
@@ -58,6 +63,7 @@ class _NewScreenState extends State<NewScreen> {
                     long = "${value.longitude}";
                     setState(() {
                       locationMessage = "Latitude:  $lat, Longtitude: $long ";
+                      updateDB(lat, long);
                     });
                   });
                 },
@@ -66,5 +72,14 @@ class _NewScreenState extends State<NewScreen> {
         )),
       ),
     );
+  }
+
+  void updateDB(String lat, String long) async {
+    double latt = double.parse(lat);
+    double longg = double.parse(long);
+    await _firestore
+        .collection("location")
+        .doc(_auth.currentUser!.uid)
+        .set(LocationModel(latitude: latt, longitude: longg).toJson());
   }
 }

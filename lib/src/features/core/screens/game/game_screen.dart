@@ -30,7 +30,7 @@ class _GameScreenState extends State<GameScreen> {
   StreamSubscription<Position>? _positionStreamSubscription;
   StreamSubscription<ServiceStatus>? _serviceStatusStreamSubscription;
   bool positionStreamStarted = false;
-  
+
   FirebaseFirestore _firebaseFirestore = FirebaseFirestore.instance;
 
   @override
