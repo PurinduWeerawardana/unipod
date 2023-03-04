@@ -16,11 +16,9 @@ import './src/features/core/screens/chat/screens/home.dart';
 
 import 'firebase_options.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
@@ -31,9 +29,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => UserProvider(),),
-        Provider<FirebaseAuthMethods>(create: (_) => FirebaseAuthMethods(),),
-
+        ChangeNotifierProvider(
+          create: (_) => UserProvider(),
+        ),
+        Provider<FirebaseAuthMethods>(
+          create: (_) => FirebaseAuthMethods(),
+        ),
       ],
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
@@ -42,12 +43,10 @@ class MyApp extends StatelessWidget {
         darkTheme: KcrozAppTheme.darkTheme,
         defaultTransition: Transition.leftToRightWithFade,
         transitionDuration: const Duration(milliseconds: 500),
+        //home: const SplashScreen(),
         home: const SplashScreen(),
-        // home: const Home(),
         // routes: const {},
       ),
     );
   }
 }
-
-

@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:baseflow_plugin_template/baseflow_plugin_template.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
@@ -29,63 +30,13 @@ class _GameScreenState extends State<GameScreen> {
   StreamSubscription<Position>? _positionStreamSubscription;
   StreamSubscription<ServiceStatus>? _serviceStatusStreamSubscription;
   bool positionStreamStarted = false;
+  
+  FirebaseFirestore _firebaseFirestore = FirebaseFirestore.instance;
 
   @override
   void initState() {
     super.initState();
     _toggleServiceStatusStream();
-  }
-
-  PopupMenuButton _createActions() {
-    return PopupMenuButton(
-      elevation: 40,
-      onSelected: (value) async {
-        switch (value) {
-          case 1:
-            _getLocationAccuracy();
-            break;
-          case 2:
-            _requestTemporaryFullAccuracy();
-            break;
-          case 3:
-            _openAppSettings();
-            break;
-          case 4:
-            _openLocationSettings();
-            break;
-          case 5:
-            setState(_positionItems.clear);
-            break;
-          default:
-            break;
-        }
-      },
-      itemBuilder: (context) => [
-        if (Platform.isIOS)
-          const PopupMenuItem(
-            child: Text("Get Location Accuracy"),
-            value: 1,
-          ),
-        if (Platform.isIOS)
-          const PopupMenuItem(
-            child: Text("Request Temporary Full Accuracy"),
-            value: 2,
-          ),
-        const PopupMenuItem(
-          child: Text("Open App Settings"),
-          value: 3,
-        ),
-        if (Platform.isAndroid || Platform.isWindows)
-          const PopupMenuItem(
-            child: Text("Open Location Settings"),
-            value: 4,
-          ),
-        const PopupMenuItem(
-          child: Text("Clear"),
-          value: 5,
-        ),
-      ],
-    );
   }
 
   @override
@@ -94,80 +45,62 @@ class _GameScreenState extends State<GameScreen> {
       height: 10,
     );
 
-    return BaseflowPluginExample(
-        pluginName: 'Geolocator',
-        githubURL: 'https://github.com/Baseflow/flutter-geolocator',
-        pubDevURL: 'https://pub.dev/packages/geolocator',
-        appBarActions: [
-          _createActions()
-        ],
-        pages: [
-          ExamplePage(
-            Icons.location_on,
-            (context) => Scaffold(
-              backgroundColor: Theme.of(context).backgroundColor,
-              body: ListView.builder(
-                itemCount: _positionItems.length,
-                itemBuilder: (context, index) {
-                  final positionItem = _positionItems[index];
-                  if (positionItem.type == _PositionItemType.log) {
-                    return ListTile(
-                      title: Text(positionItem.displayValue,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            color: Color.fromARGB(255, 26, 226, 43),
-                            fontWeight: FontWeight.bold,
-                          )),
-                    );
-                  } else {
-                    return Card(
-                      child: ListTile(
-                        tileColor: kcrozPrimaryColor,
-                        title: Text(
-                          positionItem.displayValue,
-                          style: const TextStyle(
-                              color: Color.fromARGB(255, 202, 22, 22)),
-                        ),
-                      ),
-                    );
-                  }
-                },
-              ),
-              floatingActionButton: Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  FloatingActionButton(
-                    child: (_positionStreamSubscription == null ||
-                            _positionStreamSubscription!.isPaused)
-                        ? const Icon(Icons.play_arrow)
-                        : const Icon(Icons.pause),
-                    onPressed: () {
-                      positionStreamStarted = !positionStreamStarted;
-                      _toggleListening();
-                    },
-                    tooltip: (_positionStreamSubscription == null)
-                        ? 'Start position updates'
-                        : _positionStreamSubscription!.isPaused
-                            ? 'Resume'
-                            : 'Pause',
-                    backgroundColor: _determineButtonColor(),
-                  ),
-                  sizedBox,
-                  FloatingActionButton(
-                    child: const Icon(Icons.my_location),
-                    onPressed: _getCurrentPosition,
-                  ),
-                  sizedBox,
-                  FloatingActionButton(
-                    child: const Icon(Icons.bookmark),
-                    onPressed: _getLastKnownPosition,
-                  ),
-                ],
-              ),
+    return SafeArea(
+      child: Scaffold(
+        body: ListView.builder(
+          itemCount: _positionItems.length,
+          itemBuilder: (context, index) {
+            final positionItem = _positionItems[index];
+            if (positionItem.type == _PositionItemType.log) {
+              return ListTile(
+                  title: Text(
+                positionItem.displayValue,
+                textAlign: TextAlign.center,
+              ));
+            } else {
+              return Card(
+                child: ListTile(
+                    title: Text(
+                  positionItem.displayValue,
+                )),
+              );
+            }
+          },
+        ),
+        floatingActionButton: Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            FloatingActionButton(
+              onPressed: () {
+                positionStreamStarted = !positionStreamStarted;
+                _toggleListening();
+              },
+              tooltip: (_positionStreamSubscription == null)
+                  ? 'Start position updates'
+                  : _positionStreamSubscription!.isPaused
+                      ? 'Resume'
+                      : 'Pause',
+              backgroundColor: _determineButtonColor(),
+              child: (_positionStreamSubscription == null ||
+                      _positionStreamSubscription!.isPaused)
+                  ? const Icon(Icons.play_arrow)
+                  : const Icon(Icons.pause),
             ),
-          )
-        ]);
+            sizedBox,
+            FloatingActionButton(
+              child: const Icon(Icons.my_location),
+              onPressed: _getCurrentPosition,
+            ),
+            sizedBox,
+            FloatingActionButton(
+              child: const Icon(Icons.bookmark),
+              onPressed: _getLastKnownPosition,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   Future<void> _getCurrentPosition() async {
@@ -239,8 +172,15 @@ class _GameScreenState extends State<GameScreen> {
     return true;
   }
 
+  void _updateFirestoreLocation(position) {
+    _PositionItemType.position;
+  }
+
   void _updatePositionList(_PositionItemType type, String displayValue) {
-    _positionItems.add(_PositionItem(type, displayValue));
+    _positionItems.add(_PositionItem(
+      type,
+      displayValue,
+    ));
     setState(() {});
   }
 
