@@ -242,7 +242,7 @@ class _CreateProfileState extends State<CreateProfile> {
                       TextFieldInput(
                         textEditingController: controller.religion,
                         labelText: unipodFullName,
-                        prefixIcon: const Icon(Icons.person_outline_rounded),
+                        prefixIcon: const Icon(Icons.type_specimen),
                         hintText: unipodFullName,
                         textInputType: TextInputType.text,
                       ),
@@ -264,42 +264,48 @@ class _CreateProfileState extends State<CreateProfile> {
                 kcrozDefaultSize, kcrozDefaultSize - 20, kcrozDefaultSize, 0),
             child: Column(
               children: [
-                const FormHeaderWidget(
-                  image: unipodWelcomeScreenImage,
-                  title: "Add Your Profile Photo",
-                  subTitle:
-                      "We protect our community by making sure everyone on Kcroz is real.",
-                  imageHeight: 0.2,
-                ),
                 Container(
                   padding: const EdgeInsets.only(top: kcrozDefaultSize + 10),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
+                      Text(
+                        "Let's Add Your DP",
+                        style: Theme.of(context).textTheme.headline1,
+                      ),
+                      SizedBox(
+                        height: 80,
+                      ),
                       // circular widget to add dp
                       Stack(
                         children: [
                           _image != null
                               ? CircleAvatar(
-                                  radius: 64,
+                                  radius: 150,
                                   backgroundImage: MemoryImage(_image!),
                                 )
                               : const CircleAvatar(
-                                  radius: 64,
+                                  radius: 150,
                                   backgroundImage:
                                       AssetImage(unipodDefaultProfileImage),
                                 ),
                           Positioned(
-                              bottom: -10,
-                              left: 80,
+                              bottom: 10,
+                              left: 200,
                               child: IconButton(
                                 onPressed: () {
                                   selectImage();
                                 },
-                                icon: const Icon(Icons.add_circle_outlined),
-                              ))
+                                icon: const Icon(
+                                  Icons.add_circle_outlined,
+                                  size: 50,
+                                ),
+                              )),
                         ],
-                      )
+                      ),
+                      SizedBox(
+                        height: 80,
+                      ),
                     ],
                   ),
                 )
@@ -332,7 +338,7 @@ class _CreateProfileState extends State<CreateProfile> {
                       TextFieldInput(
                         textEditingController: controller.gender,
                         labelText: unipodPassword,
-                        prefixIcon: const Icon(Icons.fingerprint),
+                        prefixIcon: const Icon(Icons.hourglass_empty_rounded),
                         hintText: unipodPassword,
                         textInputType: TextInputType.text,
                       ),
@@ -365,9 +371,13 @@ class _CreateProfileState extends State<CreateProfile> {
                   padding: const EdgeInsets.only(top: kcrozDefaultSize + 10),
                   child: SingleChildScrollView(
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Text("BIrthday"),
+                        Text(
+                          "When's your Birthday?",
+                          style: Theme.of(context).textTheme.headline1,
+                          textAlign: TextAlign.center,
+                        ),
                         SizedBox(
                           height: 300,
                           child: CupertinoDatePicker(
