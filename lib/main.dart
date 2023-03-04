@@ -1,4 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -6,14 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:provider/provider.dart';
-import 'package:unipod/src/features/authentication/screens/screens/create_profile/create_profile.dart';
 import 'package:unipod/src/features/authentication/screens/screens/splash_screen/splash_screen.dart';
 import 'package:unipod/src/providers/user_provider.dart';
 import 'package:unipod/src/services/firebase_auth_methods.dart';
 import 'package:unipod/src/utils/theme/theme.dart';
-
-import './src/features/core/screens/chat/const.dart';
-import './src/features/core/screens/chat/screens/home.dart';
 
 import 'firebase_options.dart';
 
