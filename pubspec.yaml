@@ -35,6 +35,8 @@ dependencies:
   firebase_auth: ^4.2.9
   cloud_firestore: ^4.4.3
   firebase_storage: ^11.0.14
+
+  # Location Tracker
   geolocator: ^9.0.2
   baseflow_plugin_template: ^2.1.1
 
