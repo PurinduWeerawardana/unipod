@@ -4,9 +4,10 @@ import 'package:unipod/src/features/core/screens/game/new_screeen.dart';
 import 'package:unipod/src/features/core/screens/profile/profile_screen.dart';
 import 'chat/screens/home.dart';
 import 'map/home_page_map.dart';
+import 'map/mapUi.dart';
 
 List<Widget> homeScreenItems = [
-  HomePageMap(),
+  MapUI(),
   NewScreen(),
   Chat(),
   ProfileScreen()
