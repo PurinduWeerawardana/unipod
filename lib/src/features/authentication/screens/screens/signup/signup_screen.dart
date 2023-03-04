@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:unipod/features/authentication/screens/screens/signup/widgets/signup_footer_widget.dart';
+import 'package:unipod/src/features/authentication/screens/screens/signup/widgets/signup_footer_widget.dart';
 
 import '../../../../../common_widgets/form/form_header_widget.dart';
 import '../../../../../common_widgets/text_field_input.dart';
