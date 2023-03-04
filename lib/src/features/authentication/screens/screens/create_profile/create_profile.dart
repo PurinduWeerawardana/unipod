@@ -196,7 +196,7 @@ class _CreateProfileState extends State<CreateProfile> {
         child: Column(
           children: [
             const FormHeaderWidget(
-              image: kcrozWelcomeScreenImage,
+              image: unipodWelcomeScreenImage,
               title: "What's your name?",
               subTitle: "We protect our community by making sure everyone on Kcroz is real.",
               imageHeight: 0.3,
@@ -231,7 +231,7 @@ class _CreateProfileState extends State<CreateProfile> {
         child: Column(
           children: [
             const FormHeaderWidget(
-              image: kcrozWelcomeScreenImage,
+              image: unipodWelcomeScreenImage,
               title: "Religion?",
               subTitle: "We protect our community by making sure everyone on Kcroz is real.",
               imageHeight: 0.3,
@@ -266,7 +266,7 @@ class _CreateProfileState extends State<CreateProfile> {
         child: Column(
           children: [
             const FormHeaderWidget(
-              image: kcrozWelcomeScreenImage,
+              image: unipodWelcomeScreenImage,
               title: "Add Your Profile Photo",
               subTitle: "We protect our community by making sure everyone on Kcroz is real.",
               imageHeight: 0.2,
@@ -285,7 +285,7 @@ class _CreateProfileState extends State<CreateProfile> {
                       ):
                       const CircleAvatar(
                         radius: 64,
-                        backgroundImage: AssetImage(kcrozDefaultProfileImage),
+                        backgroundImage: AssetImage(unipodDefaultProfileImage),
                       ),
                       Positioned(
                         bottom: -10,
@@ -318,7 +318,7 @@ class _CreateProfileState extends State<CreateProfile> {
         child: Column(
           children: [
             const FormHeaderWidget(
-              image: kcrozWelcomeScreenImage,
+              image: unipodWelcomeScreenImage,
               title: "I am",
               subTitle: "",
               imageHeight: 0.3,
@@ -360,7 +360,7 @@ class _CreateProfileState extends State<CreateProfile> {
         child: Column(
           children: [
             const FormHeaderWidget(
-              image: kcrozWelcomeScreenImage,
+              image: unipodWelcomeScreenImage,
               title: "When's your birthday?",
               subTitle: "",
               imageHeight: 0.3,
@@ -395,7 +395,7 @@ class _CreateProfileState extends State<CreateProfile> {
         child: Column(
           children: [
             const FormHeaderWidget(
-              image: kcrozWelcomeScreenImage,
+              image: unipodWelcomeScreenImage,
               title: "Occupation,University,College?",
               subTitle: "",
               imageHeight: 0.3,
@@ -441,7 +441,7 @@ class _CreateProfileState extends State<CreateProfile> {
         child: Column(
           children: [
             const FormHeaderWidget(
-              image: kcrozWelcomeScreenImage,
+              image: unipodWelcomeScreenImage,
               title: "Drink,Smoke, Diet?",
               subTitle: "",
               imageHeight: 0.3,
@@ -487,7 +487,7 @@ class _CreateProfileState extends State<CreateProfile> {
         child: Column(
           children: [
             const FormHeaderWidget(
-              image: kcrozWelcomeScreenImage,
+              image: unipodWelcomeScreenImage,
               title: "My Interests are",
               subTitle: "We protect our community by making sure everyone on Kcroz is real.",
               imageHeight: 0.3,

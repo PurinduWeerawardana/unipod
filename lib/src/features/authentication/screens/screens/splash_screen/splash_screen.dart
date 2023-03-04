@@ -27,7 +27,7 @@ class SplashScreen extends StatelessWidget {
             animatePosition: KcrozAnimatePosition(
                 topAfter: 0, topBefore: -30, leftAfter : 0,leftBefore : -30
             ),
-            child: const Image(image: AssetImage(kcrozSplashTopIcon)),
+            child: const Image(image: AssetImage(unipodSplashTopIcon)),
           ),
 
           // observer will observe below element
@@ -52,7 +52,7 @@ class SplashScreen extends StatelessWidget {
           KcrozFadeInAnimation(
             durationInMs: 2400,
             animatePosition: KcrozAnimatePosition(bottomBefore: 0, bottomAfter: 100),
-            child: const Image(image: AssetImage(kcrozSplashBottomIcon)),
+            child: const Image(image: AssetImage(unipodSplashBottomIcon)),
           ),
 
           KcrozFadeInAnimation(

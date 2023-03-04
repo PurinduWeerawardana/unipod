@@ -50,7 +50,7 @@ class WelcomeScreen extends StatelessWidget {
                   Hero(
                       tag: "welcome-image-tag",
                       child: Image(
-                        image: const AssetImage(kcrozWelcomeScreenImage),
+                        image: const AssetImage(unipodWelcomeScreenImage),
                         height: height * 0.6,
                       )
                   ),
