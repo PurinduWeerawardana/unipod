@@ -44,40 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCT6gukdku4kHO18alUDoUce6Skur9oO8U',
-    appId: '1:1027941086185:web:23c79fa588e1ae1ff1d178',
-    messagingSenderId: '1027941086185',
-    projectId: 'kcroz-dating-app',
-    authDomain: 'kcroz-dating-app.firebaseapp.com',
-    storageBucket: 'kcroz-dating-app.appspot.com',
-    measurementId: 'G-YZ6L4E0BTG',
+    apiKey: 'AIzaSyAr5ZONXIIi_eIBrdOYAS9WvR0hiVEQkkA',
+    appId: '1:896737658368:web:8abfb4a9fbafd7cc003ae5',
+    messagingSenderId: '896737658368',
+    projectId: 'unipod-5a0f8',
+    authDomain: 'unipod-5a0f8.firebaseapp.com',
+    storageBucket: 'unipod-5a0f8.appspot.com',
+    measurementId: 'G-X058785YNF',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBrhBvgEZOSsNiqkMrJ-n6UoaZ61ZfKXRs',
-    appId: '1:1027941086185:android:38a3212f79a97313f1d178',
-    messagingSenderId: '1027941086185',
-    projectId: 'kcroz-dating-app',
-    storageBucket: 'kcroz-dating-app.appspot.com',
+    apiKey: 'AIzaSyAsyPDQWfE9si-RHLinsqRse8PdalQebkM',
+    appId: '1:896737658368:android:5d8c1d500e9bfb48003ae5',
+    messagingSenderId: '896737658368',
+    projectId: 'unipod-5a0f8',
+    storageBucket: 'unipod-5a0f8.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCYxbNn65MWBMvzG8xZ2G3kqpVPEsdem6I',
-    appId: '1:1027941086185:ios:e9053435ad3613a7f1d178',
-    messagingSenderId: '1027941086185',
-    projectId: 'kcroz-dating-app',
-    storageBucket: 'kcroz-dating-app.appspot.com',
-    iosClientId: '1027941086185-s6bmh5knodevji7akvbi441439q51mo2.apps.googleusercontent.com',
-    iosBundleId: 'com.creed.kcroz',
+    apiKey: 'AIzaSyCMzAzEnm-HHxJGjbR1QQKTOCFpmlWr7-0',
+    appId: '1:896737658368:ios:85b6cd91dcd645fd003ae5',
+    messagingSenderId: '896737658368',
+    projectId: 'unipod-5a0f8',
+    storageBucket: 'unipod-5a0f8.appspot.com',
+    iosClientId: '896737658368-dlsh2vcn3154oeuvibrmc5l9v9o7ta8u.apps.googleusercontent.com',
+    iosBundleId: 'com.haxqaud.unipod',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCYxbNn65MWBMvzG8xZ2G3kqpVPEsdem6I',
-    appId: '1:1027941086185:ios:e9053435ad3613a7f1d178',
-    messagingSenderId: '1027941086185',
-    projectId: 'kcroz-dating-app',
-    storageBucket: 'kcroz-dating-app.appspot.com',
-    iosClientId: '1027941086185-s6bmh5knodevji7akvbi441439q51mo2.apps.googleusercontent.com',
-    iosBundleId: 'com.creed.kcroz',
+    apiKey: 'AIzaSyCMzAzEnm-HHxJGjbR1QQKTOCFpmlWr7-0',
+    appId: '1:896737658368:ios:a2d0aa9825fe8aee003ae5',
+    messagingSenderId: '896737658368',
+    projectId: 'unipod-5a0f8',
+    storageBucket: 'unipod-5a0f8.appspot.com',
+    iosClientId: '896737658368-5f7jgr65hj2h82m57srkulbs415497ii.apps.googleusercontent.com',
+    iosBundleId: 'com.example.unipod',
   );
 }

@@ -15,22 +15,9 @@ import 'firebase_options.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  if(kIsWeb){
-    await Firebase.initializeApp(
-        options: const FirebaseOptions(
-          apiKey: "AIzaSyCT6gukdku4kHO18alUDoUce6Skur9oO8U",
-          appId: "1:1027941086185:web:23c79fa588e1ae1ff1d178",
-          messagingSenderId: "1027941086185",
-          projectId: "kcroz-dating-app",
-          storageBucket: "kcroz-dating-app.appspot.com",
-        )
-    );
-  } else {
-    await Firebase.initializeApp(
-        options: DefaultFirebaseOptions.currentPlatform
-    );
-  }
-
+  await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform
+  );
   runApp(const MyApp());
 }
 

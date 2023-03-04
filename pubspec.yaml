@@ -1,6 +1,7 @@
 name: unipod
 description: A new Flutter project.
 publish_to: 'none' 
+version: 1.0.0+1
 
 
 environment:
@@ -46,6 +47,15 @@ flutter:
   uses-material-design: true
 
 
-  # assets:
+  assets:
+   - assets/images/
+   - assets/images/on_boarding_images/
+   - assets/images/on_boarding_images/on-boarding-image-1.jpg
+   - assets/images/welcome_images/welcome-screen-image.png
+   - assets/logo/
+   - assets/images/forget_password/
+   - assets/images/profile_picture/default-profile-picture.png
+   - assets/images/splash_screen/splash-screen-bottom1.png
+   - assets/images/splash_screen/splash-screen-top.jpg
 
  

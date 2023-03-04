@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "896737658368",
+    "project_id": "unipod-5a0f8",
+    "storage_bucket": "unipod-5a0f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896737658368:android:5d8c1d500e9bfb48003ae5",
+        "android_client_info": {
+          "package_name": "com.haxquad.unipod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896737658368-4ep31mqqh8pjttv7fd5cfvkma6bmb7hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsyPDQWfE9si-RHLinsqRse8PdalQebkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896737658368-4ep31mqqh8pjttv7fd5cfvkma6bmb7hk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "896737658368-5f7jgr65hj2h82m57srkulbs415497ii.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.unipod"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
