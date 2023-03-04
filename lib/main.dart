@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:provider/provider.dart';
+import 'package:unipod/src/features/authentication/screens/screens/create_profile/create_profile.dart';
 import 'package:unipod/src/features/authentication/screens/screens/splash_screen/splash_screen.dart';
 import 'package:unipod/src/providers/user_provider.dart';
 import 'package:unipod/src/services/firebase_auth_methods.dart';
@@ -17,11 +18,9 @@ import 'package:unipod/src/features/core/screens/chat/const.dart';
 
 import 'firebase_options.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
@@ -32,9 +31,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => UserProvider(),),
-        Provider<FirebaseAuthMethods>(create: (_) => FirebaseAuthMethods(),),
-
+        ChangeNotifierProvider(
+          create: (_) => UserProvider(),
+        ),
+        Provider<FirebaseAuthMethods>(
+          create: (_) => FirebaseAuthMethods(),
+        ),
       ],
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
@@ -46,10 +48,10 @@ class MyApp extends StatelessWidget {
         home: const SplashScreen(),
         //home: const Home(),
         // home: const Home(),
+        //home: const SplashScreen(),
+
         // routes: const {},
       ),
     );
   }
 }
-
-

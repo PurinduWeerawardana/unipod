@@ -1,68 +1,63 @@
 name: unipod
 description: A new Flutter project.
-publish_to: 'none' 
+publish_to: "none"
 version: 1.0.0+1
 
-
 environment:
-  sdk: '>=2.19.3 <3.0.0'
+   sdk: ">=2.19.3 <3.0.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
+   flutter:
+      sdk: flutter
 
-  provider: ^6.0.5
-  get: ^4.6.5
-  cupertino_icons: ^1.0.2
-  gallery_image_viewer: ^1.2.0
-  simple_ripple_animation: ^0.0.7
+   provider: ^6.0.5
+   get: ^4.6.5
+   cupertino_icons: ^1.0.2
+   gallery_image_viewer: ^1.2.0
+   simple_ripple_animation: ^0.0.7
 
-  # Google
-  google_fonts: ^4.0.3
-  google_sign_in: ^6.0.0
+   # Google
+   google_fonts: ^4.0.3
+   google_sign_in: ^6.0.0
 
-  # OnBoarding Packages
-  liquid_swipe: ^3.0.0
-  smooth_page_indicator: ^1.0.1
-  line_awesome_flutter: ^2.0.0
+   # OnBoarding Packages
+   liquid_swipe: ^3.0.0
+   smooth_page_indicator: ^1.0.1
+   line_awesome_flutter: ^2.0.0
 
-  # OTP Text Field Package
-  flutter_otp_text_field: ^1.1.1
+   # OTP Text Field Package
+   flutter_otp_text_field: ^1.1.1
 
-  # Image
-  image_picker: ^0.8.6+3
+   # Image
+   image_picker: ^0.8.6+3
 
-  # Backend
-  firebase_core: ^2.7.0
-  firebase_auth: ^4.2.9
-  cloud_firestore: ^4.4.3
-  firebase_storage: ^11.0.14
+   # Backend
+   firebase_core: ^2.7.0
+   firebase_auth: ^4.2.9
+   cloud_firestore: ^4.4.3
+   firebase_storage: ^11.0.14
 
-  # Location Tracker
-  geolocator: ^9.0.2
-  baseflow_plugin_template: ^2.1.1
+   # Location Tracker
+   geolocator: ^9.0.2
+   baseflow_plugin_template: ^2.1.1
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+   flutter_test:
+      sdk: flutter
 
-  flutter_lints: ^2.0.0
-  
+   flutter_lints: ^2.0.0
 
 flutter:
-  uses-material-design: true
+   uses-material-design: true
 
-
-  assets:
-   - assets/images/
-   - assets/images/chat_images/
-   - assets/images/on_boarding_images/
-   - assets/images/on_boarding_images/on-boarding-image-1.jpg
-   - assets/images/welcome_images/welcome-screen-image.png
-   - assets/logo/
-   - assets/images/forget_password/
-   - assets/images/profile_picture/default-profile-picture.png
-   - assets/images/splash_screen/splash-screen-bottom1.png
-   - assets/images/splash_screen/splash-screen-top.jpg
-
- 
+   assets:
+      - assets/images/
+      - assets/images/chat_images/
+      - assets/images/on_boarding_images/
+      - assets/images/on_boarding_images/on-boarding-image-1.jpg
+      - assets/images/welcome_images/welcome-screen-image.png
+      - assets/logo/
+      - assets/images/forget_password/
+      - assets/images/profile_picture/default-profile-picture.png
+      - assets/images/splash_screen/splash-screen-bottom1.png
+      - assets/images/splash_screen/splash-screen-top.jpg
