@@ -11,8 +11,9 @@ import 'package:unipod/src/providers/user_provider.dart';
 import 'package:unipod/src/services/firebase_auth_methods.dart';
 import 'package:unipod/src/utils/theme/theme.dart';
 
-import './src/features/core/screens/chat/const.dart';
-import './src/features/core/screens/chat/screens/home.dart';
+import 'package:unipod/src/features/core/screens/chat/screens/home.dart';
+import 'package:unipod/src/features/core/screens/chat/const.dart';
+//import './src/features/core/screens/chat/screens/home.dart';
 
 import 'firebase_options.dart';
 
@@ -42,8 +43,8 @@ class MyApp extends StatelessWidget {
         darkTheme: KcrozAppTheme.darkTheme,
         defaultTransition: Transition.leftToRightWithFade,
         transitionDuration: const Duration(milliseconds: 500),
-        //home: const SplashScreen(),
-        home: const Home(),
+        home: const SplashScreen(),
+        //home: const Home(),
         // routes: const {},
       ),
     );
