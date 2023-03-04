@@ -36,6 +36,7 @@ dependencies:
   cloud_firestore: ^4.4.3
   firebase_storage: ^11.0.14
   geolocator: ^9.0.2
+  baseflow_plugin_template: ^2.1.1
 
 dev_dependencies:
   flutter_test:
