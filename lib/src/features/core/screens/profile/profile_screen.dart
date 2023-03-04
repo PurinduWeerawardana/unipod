@@ -85,51 +85,50 @@ class ProfileScreen extends StatelessWidget {
                 ),
 
                 Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       IconButton(key:null,
                           onPressed: () {  },
-                          icon: Icon(LineAwesomeIcons.info_circle),
-                          color: Color(0xFF8BB9FD),
+                          icon: const Icon(LineAwesomeIcons.user_circle, size: 30,),
+                          color: const Color(0xFF8BB9FD),
                           ),
                       TextButton(key:null,
                           onPressed: () {  },
                           style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(const Color(0xFF8BB9FD)),
+                            padding: MaterialStateProperty.all<EdgeInsets>(const EdgeInsets.symmetric(horizontal: 30.0)),
                           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
-                              side: BorderSide(color: Color(0xFF8BB9FD)),
+                              side: const BorderSide(color: Color(0xFF8BB9FD)),
                             )
                           )
                           ),
                           child:
                           const Text(
                             "Connect",
-                            style: TextStyle(fontSize:12.0,
-                                color: Color(0xFF000000),
-                                fontWeight: FontWeight.w200,
-                                fontFamily: "Roboto"),
+                            style: TextStyle(
+                              letterSpacing: 1.5,
+                                fontSize:15.0,
+                                color: Color(0xFFFFFFFF),
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "Poppins"
+                            ),
                           )
                       ),
-                      TextButton(key:null,
-                          onPressed: () {  },
-                          child:
-                          const Text(
-                            "Text Button 4",
-                            style: TextStyle(fontSize:12.0,
-                                color: Color(0xFF000000),
-                                fontWeight: FontWeight.w200,
-                                fontFamily: "Roboto"),
-                          )
+                      IconButton(key:null,
+                        onPressed: () {  },
+                        icon: const Icon(LineAwesomeIcons.laugh_face_with_beaming_eyes, size: 30,),
+                        color: const Color(0xFF8BB9FD),
                       ),
                     ]
 
                 ),
 
                 const Text(
-                  "qWerty1",
+                  "100% Italian, fun loving, affectionate young lady who knows what it takes to mako a rolationshio work.",
                   style: TextStyle(fontSize:12.0,
                       color: Color(0xFF000000),
                       fontWeight: FontWeight.w200,
