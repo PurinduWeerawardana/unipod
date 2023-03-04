@@ -37,8 +37,8 @@ class ForgetPasswordMailScreen extends StatelessWidget {
                     children: [
                       TextFormField(
                         decoration: const InputDecoration(
-                          label: Text(kcrozEmail),
-                          hintText: kcrozEmail,
+                          label: Text(unipodEmail),
+                          hintText: unipodEmail,
                           prefixIcon: Icon(Icons.mail_outline_rounded),
                         ),
                       ),
@@ -49,7 +49,7 @@ class ForgetPasswordMailScreen extends StatelessWidget {
                             onPressed: () {
                               Get.to(() => const OTPScreen());
                             },
-                            child: const Text(kcrozNext)
+                            child: const Text(unipodNext)
                         )
                       ),
                     ],

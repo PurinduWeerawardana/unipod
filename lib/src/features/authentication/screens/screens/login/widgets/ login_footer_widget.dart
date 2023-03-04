@@ -28,7 +28,7 @@ class LoginFooterWidget extends StatelessWidget {
             onPressed: () {
               FirebaseAuthMethods().signInWithGoogle(context);
             },
-            label: Text(kcrozSignInWithGoogle.toUpperCase()),
+            label: Text(unipodSignInWithGoogle.toUpperCase()),
           ),
         ),
         const SizedBox(height: kcrozFormHeight - 20,),
@@ -39,7 +39,7 @@ class LoginFooterWidget extends StatelessWidget {
                 style: Theme.of(context).textTheme.bodyText1,
                 children: const [
                   TextSpan(
-                    text: " $kcrozSignup",
+                    text: " $unipodSignup",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.bold

@@ -38,11 +38,11 @@ class SplashScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  kcrozAppName,
+                  unipodAppName,
                   style: Theme.of(context).textTheme.headline3,
                 ),
                 Text(
-                  kcrozAppTagLine,
+                  unipodAppTagLine,
                   style: Theme.of(context).textTheme.headline2,
                 ),
               ],

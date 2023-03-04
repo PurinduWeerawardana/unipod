@@ -52,7 +52,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
             TextFormField(
               controller: controller.fullName,
               decoration: const InputDecoration(
-                label: Text(kcrozFullName),
+                label: Text(unipodFullName),
                 prefixIcon: Icon(Icons.person_outline_rounded),
               ),
             ),
@@ -60,7 +60,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
             TextFormField(
               controller: controller.email,
               decoration: const InputDecoration(
-                label: Text(kcrozEmail),
+                label: Text(unipodEmail),
                 prefixIcon: Icon(Icons.email_outlined),
               ),
             ),
@@ -68,7 +68,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
             TextFormField(
               controller: controller.phoneNo,
               decoration: const InputDecoration(
-                label: Text(kcrozPhoneNo),
+                label: Text(unipodPhoneNo),
                 prefixIcon: Icon(Icons.numbers),
               ),
             ),
@@ -76,7 +76,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
             TextFormField(
               controller: controller.password,
               decoration: const InputDecoration(
-                label: Text(kcrozPassword),
+                label: Text(unipodPassword),
                 prefixIcon: Icon(Icons.fingerprint),
               ),
             ),
@@ -85,7 +85,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
               width: double.infinity,
               child: ElevatedButton(
                   onPressed:  signUpUser,
-                  child: Text(kcrozSignup.toUpperCase())),
+                  child: Text(unipodSignup.toUpperCase())),
             )
           ],
         ),

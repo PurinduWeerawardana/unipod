@@ -26,7 +26,7 @@ class SignUpFooterWidget extends StatelessWidget {
               context.read<FirebaseAuthMethods>().signInWithGoogle(context);
             },
             icon: const Image(image: AssetImage(kcrozGoogleLogoImage), width: 20.0,),
-            label: Text(kcrozSignInWithGoogle.toUpperCase()),
+            label: Text(unipodSignInWithGoogle.toUpperCase()),
 
           ),
         ),
@@ -39,7 +39,7 @@ class SignUpFooterWidget extends StatelessWidget {
                           text: kcrozAlreadyHavenAccount,
                           style: Theme.of(context).textTheme.bodyText1
                       ),
-                      TextSpan(text: " ${kcrozLogin.toUpperCase()}",),
+                      TextSpan(text: " ${unipodLogin.toUpperCase()}",),
                     ]
                 )
             ))

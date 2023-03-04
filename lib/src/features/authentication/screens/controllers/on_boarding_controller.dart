@@ -16,7 +16,7 @@ class OnBoardingController extends GetxController{
     OnBoardingPageWidget(
         model: OnBoardingModel(
           image: kcrozOnBoardingImage1,
-          title: kcrozOnBoardingTitle1,
+          title: unipodOnBoardingTitle1,
           subTitle: kcrozOnBoardingSubTitle1,
           counterText: kcrozOnBoardingCounter1,
           bgColor: kcrozOnBoardingPage1Color,
@@ -25,7 +25,7 @@ class OnBoardingController extends GetxController{
     OnBoardingPageWidget(
         model: OnBoardingModel(
           image: kcrozOnBoardingImage2,
-          title: kcrozOnBoardingTitle2,
+          title: unipodOnBoardingTitle2,
           subTitle: kcrozOnBoardingSubTitle2,
           counterText: kcrozOnBoardingCounter2,
           bgColor: kcrozOnBoardingPage2Color,
@@ -34,7 +34,7 @@ class OnBoardingController extends GetxController{
     OnBoardingPageWidget(
         model: OnBoardingModel(
           image: kcrozOnBoardingImage3,
-          title: kcrozOnBoardingTitle3,
+          title: unipodOnBoardingTitle3,
           subTitle: kcrozOnBoardingSubTitle3,
           counterText: kcrozOnBoardingCounter3,
           bgColor: kcrozOnBoardingPage3Color,

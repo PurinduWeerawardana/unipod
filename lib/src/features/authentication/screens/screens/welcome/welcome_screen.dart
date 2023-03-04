@@ -72,7 +72,7 @@ class WelcomeScreen extends StatelessWidget {
                       Expanded(
                           child: OutlinedButton(
                               onPressed: () {Get.to(() => const LoginScreen());},
-                              child: Text(kcrozLogin.toUpperCase())
+                              child: Text(unipodLogin.toUpperCase())
                           )
                       ),
                       const SizedBox(width: 10.0,),
@@ -80,7 +80,7 @@ class WelcomeScreen extends StatelessWidget {
                           child: ElevatedButton(
                               onPressed: () {
                                 Get.to(() => const SignUpScreen());},
-                              child: Text(kcrozSignup.toUpperCase())
+                              child: Text(unipodSignup.toUpperCase())
                           )
                       ),
                     ],

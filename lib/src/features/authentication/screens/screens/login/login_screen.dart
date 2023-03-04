@@ -78,8 +78,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       children: [
                         TextFieldInput(
                           textEditingController: controller.email,
-                          hintText: kcrozEmail,
-                          labelText: kcrozEmail,
+                          hintText: unipodEmail,
+                          labelText: unipodEmail,
                           textInputType: TextInputType.emailAddress,
                           prefixIcon : const Icon(Icons.person_outline_outlined),
                         ),
@@ -87,8 +87,8 @@ class _LoginScreenState extends State<LoginScreen> {
                          const SizedBox(height: kcrozFormHeight - 20,),
                         TextFieldInput(
                           textEditingController: controller.password,
-                          labelText: kcrozPassword,
-                          hintText: kcrozPassword,
+                          labelText: unipodPassword,
+                          hintText: unipodPassword,
                           isPassword: true,
                           textInputType: TextInputType.text,
                           prefixIcon:  const Icon(Icons.fingerprint),
@@ -104,13 +104,13 @@ class _LoginScreenState extends State<LoginScreen> {
                             onPressed: () {
                               ForgetPasswordScreen.buildShowModalBottomSheet(context);
                             },
-                            child:  const Text(kcrozForgetPassword)),
+                            child:  const Text(unipodForgetPassword)),
                         ),
                         SizedBox(
                             width: double.infinity,
                             child: ElevatedButton(
                                 onPressed: loginUser,
-                                child: Text(kcrozLogin.toUpperCase())
+                                child: Text(unipodLogin.toUpperCase())
                             )
                         )
                       ],

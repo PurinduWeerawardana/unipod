@@ -46,25 +46,25 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       const SizedBox(height: kcrozDefaultSize - 20,),
                       TextFieldInput(
                         textEditingController: controller.email,
-                        labelText: kcrozEmail,
+                        labelText: unipodEmail,
                         prefixIcon: const Icon(Icons.email_outlined),
-                        hintText: kcrozEmail,
+                        hintText: unipodEmail,
                         textInputType: TextInputType.emailAddress,
                       ),
                       const SizedBox(height: kcrozDefaultSize - 20,),
                       TextFieldInput(
                         textEditingController: controller.phoneNo,
-                        labelText: kcrozPhoneNo,
+                        labelText: unipodPhoneNo,
                         prefixIcon: const Icon(Icons.numbers),
-                        hintText: kcrozPhoneNo,
+                        hintText: unipodPhoneNo,
                         textInputType: TextInputType.phone,
                       ),
                       const SizedBox(height: kcrozDefaultSize - 20,),
                       TextFieldInput(
                         textEditingController: controller.password,
-                        labelText: kcrozPassword,
+                        labelText: unipodPassword,
                         prefixIcon: const Icon(Icons.fingerprint),
-                        hintText: kcrozPassword,
+                        hintText: unipodPassword,
                         textInputType: TextInputType.text,
                       ),
                       const SizedBox(height: kcrozDefaultSize - 10,),
@@ -83,7 +83,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     colorText: Colors.red);
                               }
                             },
-                            child: Text(kcrozSignup.toUpperCase())),
+                            child: Text(unipodSignup.toUpperCase())),
                       )
                     ],
                   ),

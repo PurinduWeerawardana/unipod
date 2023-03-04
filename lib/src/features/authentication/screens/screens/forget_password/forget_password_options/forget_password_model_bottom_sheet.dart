@@ -21,7 +21,7 @@ class ForgetPasswordScreen {
             const SizedBox(height: 30.0,),
             ForgetPasswordButtonWidget(
               buttonIcon: Icons.mail_outline_rounded,
-              title: kcrozEmail,
+              title: unipodEmail,
               subTitle: kcrozResetViaEmail,
               onTap: () {
                 Navigator.pop(context);
@@ -31,7 +31,7 @@ class ForgetPasswordScreen {
             const SizedBox(height: 20.0,),
             ForgetPasswordButtonWidget(
               buttonIcon: Icons.mobile_friendly_rounded,
-              title: kcrozPhoneNo,
+              title: unipodPhoneNo,
               subTitle: kcrozResetViaPhone,
               onTap: () {},
             ),

@@ -41,7 +41,7 @@ class _HomePageMapState extends State<HomePageMap> {
     return Scaffold(
       appBar: AppBar(
         leading: const Icon(Icons.menu, color: Colors.black,),
-        title: Text(kcrozAppName, style: Theme.of(context).textTheme.headline4,),
+        title: Text(unipodAppName, style: Theme.of(context).textTheme.headline4,),
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.transparent,

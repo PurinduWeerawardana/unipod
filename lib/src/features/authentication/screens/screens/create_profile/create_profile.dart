@@ -208,9 +208,9 @@ class _CreateProfileState extends State<CreateProfile> {
                 children: [
                   TextFieldInput(
                     textEditingController: controller.fullName,
-                    labelText: kcrozFullName,
+                    labelText: unipodFullName,
                     prefixIcon: const Icon(Icons.person_outline_rounded),
-                    hintText: kcrozFullName,
+                    hintText: unipodFullName,
                     textInputType: TextInputType.text,
                   ),
                 ],
@@ -243,9 +243,9 @@ class _CreateProfileState extends State<CreateProfile> {
                 children: [
                   TextFieldInput(
                     textEditingController: controller.religion,
-                    labelText: kcrozFullName,
+                    labelText: unipodFullName,
                     prefixIcon: const Icon(Icons.person_outline_rounded),
-                    hintText: kcrozFullName,
+                    hintText: unipodFullName,
                     textInputType: TextInputType.text,
                   ),
                 ],
@@ -330,16 +330,16 @@ class _CreateProfileState extends State<CreateProfile> {
                 children: [
                   TextFieldInput(
                     textEditingController: controller.gender,
-                    labelText: kcrozPassword,
+                    labelText: unipodPassword,
                     prefixIcon: const Icon(Icons.fingerprint),
-                    hintText: kcrozPassword,
+                    hintText: unipodPassword,
                     textInputType: TextInputType.text,
                   ),
                   TextFieldInput(
                     textEditingController: controller.sexualOrientation,
-                    labelText: kcrozPassword,
+                    labelText: unipodPassword,
                     prefixIcon: const Icon(Icons.fingerprint),
-                    hintText: kcrozPassword,
+                    hintText: unipodPassword,
                     textInputType: TextInputType.text,
                   ),
                 ],
@@ -372,9 +372,9 @@ class _CreateProfileState extends State<CreateProfile> {
                 children: [
                   TextFieldInput(
                     textEditingController: controller.birthday,
-                    labelText: kcrozPassword,
+                    labelText: unipodPassword,
                     prefixIcon: const Icon(Icons.fingerprint),
-                    hintText: kcrozPassword,
+                    hintText: unipodPassword,
                     textInputType: TextInputType.datetime,
                   ),
                 ],
@@ -406,20 +406,20 @@ class _CreateProfileState extends State<CreateProfile> {
                 children: [
                   TextFormField(
                     decoration: const InputDecoration(
-                      label: Text(kcrozPhoneNo),
+                      label: Text(unipodPhoneNo),
                       prefixIcon: Icon(Icons.numbers),
                     ),
                   ),
                   TextFormField(
 
                     decoration: const InputDecoration(
-                      label: Text(kcrozPhoneNo),
+                      label: Text(unipodPhoneNo),
                       prefixIcon: Icon(Icons.numbers),
                     ),
                   ),
                   TextFormField(
                     decoration: const InputDecoration(
-                      label: Text(kcrozPhoneNo),
+                      label: Text(unipodPhoneNo),
                       prefixIcon: Icon(Icons.numbers),
                     ),
                   ),
@@ -453,19 +453,19 @@ class _CreateProfileState extends State<CreateProfile> {
                 children: [
                   TextFormField(
                     decoration: const InputDecoration(
-                      label: Text(kcrozPhoneNo),
+                      label: Text(unipodPhoneNo),
                       prefixIcon: Icon(Icons.numbers),
                     ),
                   ),
                   TextFormField(
                     decoration: const InputDecoration(
-                      label: Text(kcrozPhoneNo),
+                      label: Text(unipodPhoneNo),
                       prefixIcon: Icon(Icons.numbers),
                     ),
                   ),
                   TextFormField(
                     decoration: const InputDecoration(
-                      label: Text(kcrozPhoneNo),
+                      label: Text(unipodPhoneNo),
                       prefixIcon: Icon(Icons.numbers),
                     ),
                   ),
@@ -499,9 +499,9 @@ class _CreateProfileState extends State<CreateProfile> {
                 children: [
                   TextFieldInput(
                     textEditingController: controller.interests,
-                    labelText: kcrozPassword,
+                    labelText: unipodPassword,
                     prefixIcon: const Icon(Icons.fingerprint),
-                    hintText: kcrozPassword,
+                    hintText: unipodPassword,
                     textInputType: TextInputType.text,
                   ),
                 ],

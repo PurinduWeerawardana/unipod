@@ -1,26 +1,26 @@
 // App Text Strings
 
 // Generic Text
-const String kcrozLogin = "Login";
-const String kcrozSignup = "Signup";
-const String kcrozFullName = "Full Name";
-const String kcrozNext = "Next";
-const String kcrozEmail = "E-Mail";
-const String kcrozPhoneNo = "Phone Number";
-const String kcrozPassword = "Password";
-const String kcrozForgetPassword = "Forget Password?";
-const String kcrozSignInWithGoogle = "Sign-In with Google";
-const String kcrozProfile = "Profile";
+const String unipodLogin = "Login";
+const String unipodSignup = "Signup";
+const String unipodFullName = "Full Name";
+const String unipodNext = "Next";
+const String unipodEmail = "E-Mail";
+const String unipodPhoneNo = "Phone Number";
+const String unipodPassword = "Password";
+const String unipodForgetPassword = "Forget Password?";
+const String unipodSignInWithGoogle = "Sign-In with Google";
+const String unipodProfile = "Profile";
 
 
 // Splash Screen Text
-const String kcrozAppName = "Unipod";
-const String kcrozAppTagLine = "Your Favorite\nDating Application";
+const String unipodAppName = "Unipod";
+const String unipodAppTagLine = "Your Favorite\nDating Application";
 
 // OnBoarding Text
-const String kcrozOnBoardingTitle1 = "Dating Application1";
-const String kcrozOnBoardingTitle2 = "Dating Application2";
-const String kcrozOnBoardingTitle3 = "Dating Application3";
+const String unipodOnBoardingTitle1 = "Dating Application1";
+const String unipodOnBoardingTitle2 = "Dating Application2";
+const String unipodOnBoardingTitle3 = "Dating Application3";
 const String kcrozOnBoardingSubTitle1 = "Dating Application1";
 const String kcrozOnBoardingSubTitle2 = "Dating Application2";
 const String kcrozOnBoardingSubTitle3 = "Dating Application3";

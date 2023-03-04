@@ -15,7 +15,7 @@ class ProfileScreen extends StatelessWidget {
           onPressed: () {},
           icon: const Icon(LineAwesomeIcons.angle_left),
         ),
-        title: Text(kcrozProfile, style: Theme.of(context).textTheme.headline4,),
+        title: Text(unipodProfile, style: Theme.of(context).textTheme.headline4,),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(isDark ? LineAwesomeIcons.sun : LineAwesomeIcons.moon))
         ],
