@@ -8,8 +8,6 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:unipod/src/services/storage_methods.dart';
 
-
-
 import '../features/authentication/screens/models/user_model.dart';
 import '../utils/show_snack_bar.dart';
 import 'exceptions/login_email_password_failure.dart';

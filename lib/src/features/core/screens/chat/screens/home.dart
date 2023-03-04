@@ -6,20 +6,25 @@ import '../services/message_service.dart';
 import '../widgets/suggested_contact.dart';
 import '../widgets/recent_chat.dart';
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class Chat extends StatefulWidget {
+  const Chat({Key? key}) : super(key: key);
 
   @override
-  _HomeState createState() => _HomeState();
+  _ChatState createState() => _ChatState();
 }
 
-class _HomeState extends State<Home> {
+class _ChatState extends State<Chat> {
   final MessageService messageService = MessageService();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
+        // leading: IconButton(
+        //   icon: Icon(Icons.arrow_back, color: Colors.black),
+        //   onPressed: () => Navigator.of(context).pop(),
+        // ),
         elevation: 0,
         backgroundColor: Color.fromARGB(255, 97, 97, 97),
         toolbarHeight: 120,

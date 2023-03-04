@@ -45,6 +45,7 @@ class MyApp extends StatelessWidget {
         transitionDuration: const Duration(milliseconds: 500),
         home: const SplashScreen(),
         //home: const Home(),
+        // home: const Home(),
         // routes: const {},
       ),
     );
