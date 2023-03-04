@@ -20,6 +20,7 @@ class _ChatState extends State<Chat> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         elevation: 0,
         backgroundColor: Color.fromARGB(255, 97, 97, 97),
         toolbarHeight: 120,
