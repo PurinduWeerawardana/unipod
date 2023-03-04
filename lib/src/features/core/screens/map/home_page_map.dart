@@ -16,6 +16,8 @@ class HomePageMap extends StatefulWidget {
 }
 
 class _HomePageMapState extends State<HomePageMap> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+
   String  username = "";
 
   @override
@@ -39,6 +41,7 @@ class _HomePageMapState extends State<HomePageMap> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       appBar: AppBar(
         leading: const Icon(Icons.menu, color: Colors.black,),
         title: Text(unipodAppName, style: Theme.of(context).textTheme.headline4,),
@@ -53,12 +56,34 @@ class _HomePageMapState extends State<HomePageMap> {
             ),
             child: IconButton(
               onPressed: () {
-                FirebaseAuthMethods().signOut(context);
+                _scaffoldKey.currentState?.openDrawer();
+                // FirebaseAuthMethods().signOut(context);
                 },
               icon: const Icon(Icons.logout_outlined),
             ),
           )
         ],
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            const DrawerHeader(
+              child: Text("Drawer Header"),
+            ),
+            ListTile(
+              title: const Text("Item 1"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text("Item 2"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
       ),
       body: SingleChildScrollView(
         child: Container(

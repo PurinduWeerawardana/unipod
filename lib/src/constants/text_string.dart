@@ -21,12 +21,12 @@ const String unipodAppTagLine = "Your Favorite\nDating Application";
 const String unipodOnBoardingTitle1 = "Dating Application1";
 const String unipodOnBoardingTitle2 = "Dating Application2";
 const String unipodOnBoardingTitle3 = "Dating Application3";
-const String kcrozOnBoardingSubTitle1 = "Dating Application1";
-const String kcrozOnBoardingSubTitle2 = "Dating Application2";
-const String kcrozOnBoardingSubTitle3 = "Dating Application3";
-const String kcrozOnBoardingCounter1 = "1/3";
-const String kcrozOnBoardingCounter2 = "2/3";
-const String kcrozOnBoardingCounter3 = "3/3";
+const String unipodOnBoardingSubTitle1 = "Dating Application1";
+const String unipodOnBoardingSubTitle2 = "Dating Application2";
+const String unipodOnBoardingSubTitle3 = "Dating Application3";
+const String unipodOnBoardingCounter1 = "1/3";
+const String unipodOnBoardingCounter2 = "2/3";
+const String unipodOnBoardingCounter3 = "3/3";
 
 
 // Welcome Screen Text
