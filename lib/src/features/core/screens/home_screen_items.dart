@@ -4,7 +4,7 @@ import 'package:unipod/src/features/core/screens/game/new_screeen.dart';
 import 'package:unipod/src/features/core/screens/profile/profile_screen.dart';
 import 'map/home_page_map.dart';
 
-const homeScreenItems = [
+List<Widget> homeScreenItems = [
   HomePageMap(),
   NewScreen(),
   Center(child: Text("Message")),
