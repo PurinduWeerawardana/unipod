@@ -64,7 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 children:  [
                   // Section - 1
                   const FormHeaderWidget(
-                    image: kcrozWelcomeScreenImage,
+                    image: unipodWelcomeScreenImage,
                     title: kcrozLoginTitle,
                     subTitle: kcrozLoginTitle,
                     imageHeight: 0.2,

@@ -24,7 +24,7 @@ class LoginFooterWidget extends StatelessWidget {
         SizedBox( // make it cover the complete screen
           width: double.infinity,
           child: OutlinedButton.icon(
-            icon: const Image(image: AssetImage(kcrozGoogleLogoImage), width: 20.0,),
+            icon: const Image(image: AssetImage(unipodGoogleLogoImage), width: 20.0,),
             onPressed: () {
               FirebaseAuthMethods().signInWithGoogle(context);
             },

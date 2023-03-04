@@ -43,7 +43,6 @@ class _HomePageMapState extends State<HomePageMap> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        leading: const Icon(Icons.menu, color: Colors.black,),
         title: Text(unipodAppName, style: Theme.of(context).textTheme.headline4,),
         centerTitle: true,
         elevation: 0,
@@ -53,13 +52,6 @@ class _HomePageMapState extends State<HomePageMap> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               color: Colors.grey,
-            ),
-            child: IconButton(
-              onPressed: () {
-                _scaffoldKey.currentState?.openDrawer();
-                // FirebaseAuthMethods().signOut(context);
-                },
-              icon: const Icon(Icons.logout_outlined),
             ),
           )
         ],

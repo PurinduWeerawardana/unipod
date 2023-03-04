@@ -15,7 +15,7 @@ class OnBoardingController extends GetxController{
   final pages = [
     OnBoardingPageWidget(
         model: OnBoardingModel(
-          image: kcrozOnBoardingImage1,
+          image: unipodOnBoardingImage1,
           title: unipodOnBoardingTitle1,
           subTitle: unipodOnBoardingSubTitle1,
           counterText: unipodOnBoardingCounter1,
@@ -24,7 +24,7 @@ class OnBoardingController extends GetxController{
     ),
     OnBoardingPageWidget(
         model: OnBoardingModel(
-          image: kcrozOnBoardingImage2,
+          image: unipodOnBoardingImage2,
           title: unipodOnBoardingTitle2,
           subTitle: unipodOnBoardingSubTitle2,
           counterText: unipodOnBoardingCounter2,
@@ -33,7 +33,7 @@ class OnBoardingController extends GetxController{
     ),
     OnBoardingPageWidget(
         model: OnBoardingModel(
-          image: kcrozOnBoardingImage3,
+          image: unipodOnBoardingImage3,
           title: unipodOnBoardingTitle3,
           subTitle: unipodOnBoardingSubTitle3,
           counterText: unipodOnBoardingCounter3,

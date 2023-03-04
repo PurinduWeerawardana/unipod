@@ -25,7 +25,7 @@ class SignUpFooterWidget extends StatelessWidget {
             onPressed: () {
               context.read<FirebaseAuthMethods>().signInWithGoogle(context);
             },
-            icon: const Image(image: AssetImage(kcrozGoogleLogoImage), width: 20.0,),
+            icon: const Image(image: AssetImage(unipodGoogleLogoImage), width: 20.0,),
             label: Text(unipodSignInWithGoogle.toUpperCase()),
 
           ),

@@ -23,7 +23,7 @@ class ForgetPasswordMailScreen extends StatelessWidget {
               children: [
                 const SizedBox(height: kcrozDefaultSize * 4,),
                 const FormHeaderWidget(
-                  image: kcrozForgetPasswordImage,
+                  image: unipodForgetPasswordImage,
                   title: kcrozForgetPasswordTitle,
                   subTitle: kcrozForgetPasswordSubTitle,
                   crossAxisAlignment: CrossAxisAlignment.center,

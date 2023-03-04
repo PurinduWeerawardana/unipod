@@ -6,7 +6,7 @@ import '../../../../constants/text_string.dart';
 
 class ProfileScreen extends StatelessWidget {
   ProfileScreen({Key? key}) : super(key: key);
-  List<ImageProvider> _imageProviders = [
+  final List<ImageProvider> _imageProviders = [
     Image.network("https://i12.haber7.net//haber/haber7/og_image/2022/22/hande_ercelden_sert_cikis_kadinlara_yuklenmeyin_1654068467_3687.jpg").image,
     Image.network("https://los40es00.epimg.net/los40/imagenes/2021/08/11/cinetv/1628672548_463726_1628675121_noticia_normal_amp.jpg").image,
     Image.network("https://www.chafarderias.com/uploads/s1/17/08/69/hande-ercel.jpeg").image,

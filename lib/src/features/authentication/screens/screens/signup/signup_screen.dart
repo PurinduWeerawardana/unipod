@@ -31,7 +31,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               children:  [
                 // Section - 1 [ Header ]
                 const FormHeaderWidget(
-                    image: kcrozWelcomeScreenImage,
+                    image: unipodWelcomeScreenImage,
                     title: kcrozSignUpTitle,
                     subTitle: kcrozSignUpSubTitle,
                     imageHeight: 0.2,
