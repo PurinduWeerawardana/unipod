@@ -4,7 +4,6 @@ import 'package:simple_ripple_animation/simple_ripple_animation.dart';
 import '../chat/models/message.dart';
 import '../chat/models/user.dart';
 import '../chat/services/message_service.dart';
-import '../chat/widgets/recent_chat.dart';
 import '../chat/widgets/suggested_contact.dart';
 
 
@@ -17,7 +16,6 @@ class MapUI extends StatefulWidget {
 
 
 class _MapUIState extends State<MapUI> {
-  final MessageService messageService = MessageService();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,9 +31,10 @@ class _MapUIState extends State<MapUI> {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
+
       body: Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         SizedBox.fromSize(size: Size(0,50)),
         Column(
@@ -59,80 +58,30 @@ class _MapUIState extends State<MapUI> {
             ),
             SizedBox.fromSize(size: Size(10, 10)),
           ]
-        )],
         ),
-
-    );
-  }
-  Widget buildSuggestedContactsWidget() {
-    List<User> users = messageService.getUsers();
-
-    return SizedBox(
-      height: 100,
-      child: Padding(
-        padding: const EdgeInsets.only(left: 10.0),
-        child: Stack(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: Container(
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Colors.black12,
-                ),
-                child: const Padding(
-                  padding: EdgeInsets.all(14.0),
-                  child: Icon(
-                    Icons.search,
-                    color: Colors.white,
-                    size: 30,
-                  ),
-                ),
+        Container(
+          margin: EdgeInsets.symmetric(vertical: 0 ,horizontal: 80),
+          alignment: Alignment.center,
+          child: ListView(
+            shrinkWrap: true,
+            children: <Widget>[
+              ListTile(
+                leading: Image.asset('assets/images/chat_images/emoji1.png'),
+                title: Text('Purindu Thamash'),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 80.0),
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: users.length,
-                itemBuilder: (BuildContext context, int index) {
-                  final User user = users[index];
-                  return SuggestedContact(user: user);
-                },
+              ListTile(
+                leading: Image.asset('assets/images/chat_images/emoji1.png'),
+                title: Text('Sithum Raveesha'),
               ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-  Widget buildRecentChatsWidget() {
-    List<Message> chats = messageService.getChats();
-
-    return Container(
-      decoration: const BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(36.0),
-          topRight: Radius.circular(36.0),
-        ),
-      ),
-      child: ClipRRect(
-        borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(36.0),
-          topRight: Radius.circular(36.0),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 0.0),
-          child: ListView.builder(
-            itemCount: chats.length,
-            itemBuilder: (BuildContext context, int index) {
-              final Message message = chats[index];
-              return RecentChat(message: message);
-            },
+              ListTile(
+                leading: Image.asset('assets/images/chat_images/emoji1.png'),
+                title: Text('Ginura Ransika'),
+              ),
+            ],
           ),
         ),
-      ),
+      ],
+        ),
     );
   }
 }
