@@ -54,7 +54,7 @@ class _CreateProfileState extends State<CreateProfile> {
         religion: controller.religion.text,
         gender: controller.gender.text,
         sexualOrientation: controller.sexualOrientation.text,
-        birthday: controller.birthday.text,
+        birthday: _dateTime.toString(),
         interests: controller.interests.text,
         file: _image!,
         context: context);
@@ -165,9 +165,8 @@ class _CreateProfileState extends State<CreateProfile> {
         return true;
       }
     } else if (currentStep == 4) {
-      if (controller.birthday.text.isNotEmpty) {
-        return true;
-      }
+      print(_dateTime);
+      return true;
     } else if (currentStep == 5) {
       return true;
     } else if (currentStep == 6) {
@@ -368,21 +367,18 @@ class _CreateProfileState extends State<CreateProfile> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        Text("BIrthday"),
                         SizedBox(
-                          height: 500,
+                          height: 300,
                           child: CupertinoDatePicker(
-                            
+                              mode: CupertinoDatePickerMode.date,
                               initialDateTime: _dateTime,
                               onDateTimeChanged: (dateTime) {
                                 print(dateTime);
+                                setState(() {
+                                  _dateTime = dateTime;
+                                });
                               }),
-                        ),
-                        TextFieldInput(
-                          textEditingController: controller.birthday,
-                          labelText: unipodPassword,
-                          prefixIcon: const Icon(Icons.fingerprint),
-                          hintText: unipodPassword,
-                          textInputType: TextInputType.datetime,
                         ),
                       ],
                     ),
