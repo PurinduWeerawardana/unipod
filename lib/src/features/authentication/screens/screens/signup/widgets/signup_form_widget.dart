@@ -1,9 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kcroz/src/features/authentication/screens/models/user_model.dart';
-import 'package:kcroz/src/services/firebase_auth_methods.dart';
-import 'package:kcroz/src/services/user_repository.dart';
+
 
 import '../../../../../../constants/sizes.dart';
 import '../../../../../../constants/text_string.dart';

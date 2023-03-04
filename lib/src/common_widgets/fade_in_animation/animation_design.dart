@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-import '../../../common_widgets/fade_in_animation/fade_in_animation_model.dart';
 import 'fade_in_animation_controller.dart';
+import 'fade_in_animation_model.dart';
 
 class KcrozFadeInAnimation extends StatelessWidget {
   KcrozFadeInAnimation({

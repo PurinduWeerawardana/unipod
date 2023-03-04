@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kcroz/src/common_widgets/text_field_input.dart';
-import 'package:kcroz/src/constants/sizes.dart';
-import 'package:kcroz/src/constants/text_string.dart';
-import 'package:kcroz/src/features/core/screens/map/home_page_map.dart';
 import '../../../../../common_widgets/form/form_header_widget.dart';
+import '../../../../../common_widgets/text_field_input.dart';
 import '../../../../../constants/image_string.dart';
+import '../../../../../constants/sizes.dart';
+import '../../../../../constants/text_string.dart';
 import '../../../../../services/firebase_auth_methods.dart';
+import '../../../../core/screens/map/home_page_map.dart';
 import '../../controllers/login_controller.dart';
 import '../forget_password/forget_password_options/forget_password_model_bottom_sheet.dart';
 import 'widgets/ login_footer_widget.dart';

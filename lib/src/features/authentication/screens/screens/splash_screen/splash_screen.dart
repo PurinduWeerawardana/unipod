@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kcroz/src/common_widgets/fade_in_animation/animation_design.dart';
-import 'package:kcroz/src/common_widgets/fade_in_animation/fade_in_animation_model.dart';
 
+import '../../../../../common_widgets/fade_in_animation/animation_design.dart';
 import '../../../../../common_widgets/fade_in_animation/fade_in_animation_controller.dart';
+import '../../../../../common_widgets/fade_in_animation/fade_in_animation_model.dart';
 import '../../../../../constants/colors.dart';
 import '../../../../../constants/image_string.dart';
 import '../../../../../constants/sizes.dart';

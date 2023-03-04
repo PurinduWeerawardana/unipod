@@ -2,15 +2,15 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:kcroz/src/responsive/mobile_screen_layout.dart';
-import 'package:kcroz/src/responsive/responsive_layout_screen.dart';
-import 'package:kcroz/src/responsive/web_screen_layout.dart';
 
 import '../../../../../common_widgets/form/form_header_widget.dart';
 import '../../../../../common_widgets/text_field_input.dart';
 import '../../../../../constants/image_string.dart';
 import '../../../../../constants/sizes.dart';
 import '../../../../../constants/text_string.dart';
+import '../../../../../responsive/mobile_screen_layout.dart';
+import '../../../../../responsive/responsive_layout_screen.dart';
+import '../../../../../responsive/web_screen_layout.dart';
 import '../../../../../services/firebase_auth_methods.dart';
 import '../../../../../utils/utils.dart';
 import '../../controllers/signup_controller.dart';

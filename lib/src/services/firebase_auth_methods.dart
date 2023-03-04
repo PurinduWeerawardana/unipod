@@ -6,14 +6,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:kcroz/src/features/authentication/screens/models/user_model.dart';
-import 'package:kcroz/src/features/authentication/screens/screens/signup/signup_screen.dart';
-import 'package:kcroz/src/services/exceptions/login_email_password_failure.dart';
-import 'package:kcroz/src/services/storage_methods.dart';
+import 'package:unipod/services/storage_methods.dart';
+
 
 
 import '../features/authentication/screens/models/user_model.dart';
 import '../utils/show_snack_bar.dart';
+import 'exceptions/login_email_password_failure.dart';
 import 'exceptions/signup_email_password_failure.dart';
 
 class FirebaseAuthMethods {

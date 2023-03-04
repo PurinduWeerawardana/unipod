@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:unipod/features/authentication/screens/screens/signup/widgets/signup_footer_widget.dart';
 
-import 'package:kcroz/src/common_widgets/form/form_header_widget.dart';
-import 'package:kcroz/src/common_widgets/text_field_input.dart';
-import 'package:kcroz/src/constants/image_string.dart';
-import 'package:kcroz/src/constants/sizes.dart';
-import 'package:kcroz/src/constants/text_string.dart';
-import 'package:kcroz/src/features/authentication/screens/screens/create_profile/create_profile.dart';
-import 'package:kcroz/src/features/authentication/screens/screens/signup/widgets/signup_footer_widget.dart';
+import '../../../../../common_widgets/form/form_header_widget.dart';
+import '../../../../../common_widgets/text_field_input.dart';
+import '../../../../../constants/image_string.dart';
+import '../../../../../constants/sizes.dart';
+import '../../../../../constants/text_string.dart';
 import '../../controllers/signup_controller.dart';
+import '../create_profile/create_profile.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);

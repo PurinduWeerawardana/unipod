@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:kcroz/src/features/authentication/screens/models/user_model.dart';
-import 'package:kcroz/src/services/firebase_auth_methods.dart';
+
+import '../features/authentication/screens/models/user_model.dart';
+import '../services/firebase_auth_methods.dart';
 
 class UserProvider extends ChangeNotifier{
   UserModel? _user;

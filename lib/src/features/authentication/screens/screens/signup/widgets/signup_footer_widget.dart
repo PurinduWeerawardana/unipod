@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:kcroz/src/features/authentication/screens/screens/login/login_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../../../constants/image_string.dart';
 import '../../../../../../constants/text_string.dart';
 import '../../../../../../services/firebase_auth_methods.dart';
+import '../../login/login_screen.dart';
 
 
 class SignUpFooterWidget extends StatelessWidget {

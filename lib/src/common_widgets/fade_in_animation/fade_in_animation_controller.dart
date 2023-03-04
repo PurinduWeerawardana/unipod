@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 
-
-import '../../../services/auth_wrapper.dart';
+import '../../services/auth_wrapper.dart';
 
 
 class FadeInAnimationController extends GetxController {

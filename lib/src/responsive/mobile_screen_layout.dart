@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:kcroz/src/features/core/screens/home_screen_items.dart';
+
+import '../features/core/screens/home_screen_items.dart';
 
 
 class MobileScreenLayout extends StatefulWidget {

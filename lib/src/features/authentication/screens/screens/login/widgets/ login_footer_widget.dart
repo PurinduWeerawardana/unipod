@@ -2,10 +2,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'package:kcroz/src/services/firebase_auth_methods.dart';
 import '../../../../../../constants/image_string.dart';
 import '../../../../../../constants/sizes.dart';
 import '../../../../../../constants/text_string.dart';
+import '../../../../../../services/firebase_auth_methods.dart';
 import '../../signup/signup_screen.dart';
 
 

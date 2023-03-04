@@ -1,11 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:kcroz/src/constants/text_string.dart';
-import 'package:kcroz/src/services/firebase_auth_methods.dart';
+
 import 'package:provider/provider.dart';
 
 import '../../../../common_widgets/button/custom_button.dart';
+import '../../../../constants/text_string.dart';
+import '../../../../services/firebase_auth_methods.dart';
 
 class HomePageMap extends StatefulWidget {
   const HomePageMap({Key? key}) : super(key: key);

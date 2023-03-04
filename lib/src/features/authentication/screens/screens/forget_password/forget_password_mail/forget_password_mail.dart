@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:kcroz/src/constants/image_string.dart';
-import 'package:kcroz/src/constants/sizes.dart';
-import 'package:kcroz/src/constants/text_string.dart';
 
 import '../../../../../../common_widgets/form/form_header_widget.dart';
+import '../../../../../../constants/image_string.dart';
+import '../../../../../../constants/sizes.dart';
+import '../../../../../../constants/text_string.dart';
 import '../forget_password_otp/otp_screen.dart';
 
 

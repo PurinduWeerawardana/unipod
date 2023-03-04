@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:kcroz/src/constants/sizes.dart';
-import 'package:kcroz/src/constants/text_string.dart';
+
+import '../../../../../../constants/sizes.dart';
+import '../../../../../../constants/text_string.dart';
 
 
 class OTPScreen extends StatelessWidget {

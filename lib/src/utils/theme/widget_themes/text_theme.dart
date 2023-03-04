@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:kcroz/src/constants/colors.dart';
+
+import '../../../constants/colors.dart';
+
 
 // Light and Dark Text Themes
 class KcrozTextTheme {

@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:provider/provider.dart';
-import 'package:unipod/providers/user_provider.dart';
-import 'package:unipod/services/firebase_auth_methods.dart';
-import 'package:unipod/utils/theme/theme.dart';
+import 'package:unipod/src/features/authentication/screens/screens/splash_screen/splash_screen.dart';
+import 'package:unipod/src/providers/user_provider.dart';
+import 'package:unipod/src/services/firebase_auth_methods.dart';
+import 'package:unipod/src/utils/theme/theme.dart';
 
-import 'features/authentication/screens/screens/splash_screen/splash_screen.dart';
 import 'firebase_options.dart';
 
 void main() async{
