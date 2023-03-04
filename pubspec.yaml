@@ -53,6 +53,7 @@ flutter:
 
   assets:
    - assets/images/
+   - assets/images/chat_images/
    - assets/images/on_boarding_images/
    - assets/images/on_boarding_images/on-boarding-image-1.jpg
    - assets/images/welcome_images/welcome-screen-image.png
