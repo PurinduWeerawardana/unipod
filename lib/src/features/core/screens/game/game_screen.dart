@@ -9,7 +9,6 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:unipod/src/constants/colors.dart';
 
-
 class GameScreen extends StatefulWidget {
   const GameScreen({super.key});
 
@@ -30,7 +29,8 @@ class _GameScreenState extends State<GameScreen> {
   StreamSubscription<Position>? _positionStreamSubscription;
   StreamSubscription<ServiceStatus>? _serviceStatusStreamSubscription;
   bool positionStreamStarted = false;
- @override
+
+  @override
   void initState() {
     super.initState();
     _toggleServiceStatusStream();
@@ -110,13 +110,12 @@ class _GameScreenState extends State<GameScreen> {
                 itemCount: _positionItems.length,
                 itemBuilder: (context, index) {
                   final positionItem = _positionItems[index];
-
                   if (positionItem.type == _PositionItemType.log) {
                     return ListTile(
                       title: Text(positionItem.displayValue,
                           textAlign: TextAlign.center,
                           style: const TextStyle(
-                            color: Colors.white,
+                            color: Color.fromARGB(255, 26, 226, 43),
                             fontWeight: FontWeight.bold,
                           )),
                     );
@@ -126,7 +125,8 @@ class _GameScreenState extends State<GameScreen> {
                         tileColor: kcrozPrimaryColor,
                         title: Text(
                           positionItem.displayValue,
-                          style: const TextStyle(color: Colors.white),
+                          style: const TextStyle(
+                              color: Color.fromARGB(255, 202, 22, 22)),
                         ),
                       ),
                     );

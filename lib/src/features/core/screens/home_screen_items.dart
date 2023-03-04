@@ -6,7 +6,7 @@ import 'map/home_page_map.dart';
 
 List<Widget> homeScreenItems = [
   HomePageMap(),
-  NewScreen(),
+  GameScreen(),
   Center(child: Text("Message")),
   ProfileScreen()
 ];
