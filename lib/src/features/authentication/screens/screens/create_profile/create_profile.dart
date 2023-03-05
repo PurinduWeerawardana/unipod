@@ -241,9 +241,9 @@ class _CreateProfileState extends State<CreateProfile> {
                     children: [
                       TextFieldInput(
                         textEditingController: controller.religion,
-                        labelText: unipodFullName,
+                        labelText: "Religion",
                         prefixIcon: const Icon(Icons.type_specimen),
-                        hintText: unipodFullName,
+                        hintText: "Religion",
                         textInputType: TextInputType.text,
                       ),
                     ],
@@ -331,22 +331,32 @@ class _CreateProfileState extends State<CreateProfile> {
                   imageHeight: 0.3,
                 ),
                 Container(
-                  padding: const EdgeInsets.only(top: kcrozDefaultSize + 10),
+                  padding: const EdgeInsets.only(top: kcrozDefaultSize - 20),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TextFieldInput(
                         textEditingController: controller.gender,
-                        labelText: unipodPassword,
+                        labelText: "Gender",
                         prefixIcon: const Icon(Icons.hourglass_empty_rounded),
-                        hintText: unipodPassword,
+                        hintText: "Gender",
                         textInputType: TextInputType.text,
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        "Interested In",
+                        style: Theme.of(context).textTheme.headline1,
+                      ),
+                      SizedBox(
+                        height: 20,
                       ),
                       TextFieldInput(
                         textEditingController: controller.sexualOrientation,
-                        labelText: unipodPassword,
-                        prefixIcon: const Icon(Icons.fingerprint),
-                        hintText: unipodPassword,
+                        labelText: "Sexual Orientation",
+                        prefixIcon: const Icon(Icons.heat_pump_rounded),
+                        hintText: "Sexual Orientation",
                         textInputType: TextInputType.text,
                       ),
                     ],
@@ -421,20 +431,26 @@ class _CreateProfileState extends State<CreateProfile> {
                     children: [
                       TextFormField(
                         decoration: const InputDecoration(
-                          label: Text(unipodPhoneNo),
-                          prefixIcon: Icon(Icons.numbers),
+                          label: Text("Occupation"),
+                          prefixIcon: Icon(Icons.cast_for_education),
                         ),
+                      ),
+                      SizedBox(
+                        height: 20,
                       ),
                       TextFormField(
                         decoration: const InputDecoration(
-                          label: Text(unipodPhoneNo),
-                          prefixIcon: Icon(Icons.numbers),
+                          label: Text("University"),
+                          prefixIcon: Icon(Icons.book),
                         ),
+                      ),
+                      SizedBox(
+                        height: 20,
                       ),
                       TextFormField(
                         decoration: const InputDecoration(
-                          label: Text(unipodPhoneNo),
-                          prefixIcon: Icon(Icons.numbers),
+                          label: Text("College"),
+                          prefixIcon: Icon(Icons.book_online_rounded),
                         ),
                       ),
                     ],
@@ -468,20 +484,26 @@ class _CreateProfileState extends State<CreateProfile> {
                     children: [
                       TextFormField(
                         decoration: const InputDecoration(
-                          label: Text(unipodPhoneNo),
-                          prefixIcon: Icon(Icons.numbers),
+                          label: Text("Drink"),
+                          prefixIcon: Icon(Icons.local_drink),
                         ),
+                      ),
+                      SizedBox(
+                        height: 20,
                       ),
                       TextFormField(
                         decoration: const InputDecoration(
-                          label: Text(unipodPhoneNo),
-                          prefixIcon: Icon(Icons.numbers),
+                          label: Text("Smoke"),
+                          prefixIcon: Icon(Icons.smoke_free_rounded),
                         ),
+                      ),
+                      SizedBox(
+                        height: 20,
                       ),
                       TextFormField(
                         decoration: const InputDecoration(
-                          label: Text(unipodPhoneNo),
-                          prefixIcon: Icon(Icons.numbers),
+                          label: Text("Diet"),
+                          prefixIcon: Icon(Icons.food_bank_rounded),
                         ),
                       ),
                     ],
@@ -516,9 +538,9 @@ class _CreateProfileState extends State<CreateProfile> {
                     children: [
                       TextFieldInput(
                         textEditingController: controller.interests,
-                        labelText: unipodPassword,
-                        prefixIcon: const Icon(Icons.fingerprint),
-                        hintText: unipodPassword,
+                        labelText: "Interests",
+                        prefixIcon: const Icon(Icons.sports_cricket),
+                        hintText: "Interests",
                         textInputType: TextInputType.text,
                       ),
                     ],
